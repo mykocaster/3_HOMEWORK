@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>domashka#3</title>
+    <style>
+	table {
+      margin: 0 auto;
+	  }
+	.tablica {
+      width: 1000px;
+      border: 1px outset #292929;
+	  }
+	th {
+      border: 2px inset #292929;
+	  }
+	td {
+      border: 2px inset #292929;
+      vertical-align: top;
+	  }
+	.onetab {
+      width: 500px;
+      margin: 20px auto;
+      border: 2px outset #292929;
+	  }
+	.twotab {
+	  width: 500px;
+      border-collapse: collapse;
+      text-align: left;
+      border: 3px ridge #292929;
+	  }
+	</style>
+	  
+</head>
+<body>
+    <table class="tablica">
+        <thead>
+            <tr>
+                <th>Об'єкт обробки</th>
+                <th>Норма витрат препарату, мл/10л</th>
+                <th>Норма витрат препарату, л/сотку</th>
+                <th>Шкідливі об'єкти</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Картопля</td>
+                <td>&nbsp;60-80</td>
+                <td>&nbsp;до 5л.</td>
+                <td>Однорічні дводольні та злакові бур'яни</td>
+            </tr>
+            <tr>
+                <td>Морква</td>
+                <td>&nbsp;40-60</td>
+                <td>&nbsp;до 5л.</td>
+                <td>Однорічні дводольні та злакові бур'яни</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="onetab">
+        <thead>
+            <tr>
+                <th>Культура</th>
+                <th>Бур'яни</th>
+                <th>Норма витрати препарату, л/га</th>
+                <th>Строки обробки</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Ріпак</th>
+                <td>однорічні</td>
+                <td>&nbsp;2-3</td>
+                <td>1 обробка в фазі 2-4 листків у бур'янів.При висоті бур'янів 10-15 см</td>
+            </tr>
+            <tr>
+                <th>Томати</th>
+                <td rowspan="2">однорічні та багаторічні</td>
+                <td>&nbsp;1-22-3</td>
+                <td rowspan="3">1 обробки в фазі 1-2 листків у бур'янів.При висоті бур'янів 10-15 см</td>
+            </tr>
+
+            <tr>
+                <th>Огірки</th>
+                <td>2-3</td>
+            </tr>
+            <tr>
+                <th>Коноплі</th>
+                <td>однорічні</td>
+                <td>&nbsp;1,5</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="twotab">
+		<thead>
+			<tr>
+				<th class="shapka">Культура</th>
+				<th class="shapka">Спектр дії</th>
+				<th class="shapka">Норма витрати</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="texttable">Буряки (столові, цукрові, кормові), морква, соняшник, картопля, капуста, цибуля, ріпак, баклажани, гарбузи, горох, дині, огірки, перець, петрушка, селера, спаржа, томати,плодові культури (вишня, груша, персик, слива, яблуня), ягідні культури (суниця, смородина)</td>
+				<td class="texttable">Гумай, куряче просо, види мишию, види пальчатки, види вівсюга, метлюг звичайний, лисохвіст польовий, просо волосовидне</td>
+				<td class="texttable">0,8-2,0 л/га</td>
+			</tr>
+			<tr>
+				<td class="texttable">Однорічні та деякі багаторічні дводольні в т.ч. стійкі до 2,4-Д (підмаренник чіпкий, берізка польова, зірочник середній, та ін..)</td>
+				<td class="texttable">Пшениця озима</td>
+				<td class="texttable">7,5-10</td>
+			</tr>
+			<tr>
+				<td class="texttable">Поля, призначені для посіву озимих, оеочєбих, баштанних культур, цукрових бурякіБ, кукурудзи, багаторічних трав. Пари, несільськогосподарські угіддя, та ін..</td>
+				<td class="texttable">Багаторічні дводольні (осоти, ромашки, молочаї, кульбаба, та ін-.)</td>
+				<td class="texttable">30</td>
+			</tr>
+		</tbody>
+    </table>
+</body>
+</html>

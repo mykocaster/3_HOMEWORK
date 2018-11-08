@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+	<title>forms</title>
+	<meta charset="utf-8">
+	<style>
+        legend {
+            font-weight: bold;
+        }  
+      
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px;
+        }
+        span {
+            font-weight: bold;
+        }
+        .letter {
+            font-weight: normal;
+            font-style: italic;
+        }
+		.form {
+            margin:0 auto;
+            width: 50px;
+        }
+          
+      </style>
+</head>
+
+<body>
+
+
+	<h1>Заполните форму для регистрации</h1>
+
+	<form action="#" method="POST">
+		
+		<fieldset>
+			<legend>Коротко о себе</legend>
+
+			<p>
+				<label>Имя: <input class="first_name" type="text" name="imya" placeholder="Введите свое имя" required></label>
+			</p>
+
+			<p>
+				<label>Фамилия: <input class="last_name" type="text" name="prizvyche" placeholder="Введите свою фамилию" required></label>
+			</p>
+
+			<p class="radio_pol">Укажите пол: 
+				<label><input type="radio" name="pol" value="man" checked=""> Мужской </label>
+
+				<label><input type="radio" name="pol" value="woman"> Женский</label>
+			</p>
+
+			<p><label>Возраст: <input type="text" name="age" required> лет</label></p>			
+		</fieldset>
+
+		
+		<fieldset>
+			<legend>Подробно о себе</legend>
+				<p>
+					<label><input type="radio" name="teenage" value="guy" checked> Молодой человек </label>
+
+					<label><input type="radio" name="teenage" value="girl"> Девушка</label>
+				</p>
+				
+				<p>
+				
+					<label><input type="text" name="birthday" required> Дата рождения</label><br>
+					
+					<label><input type="text" name="family" required> Семейное положение</label><br>
+								
+					<label><input type="text" name="social" required> Социальный статус</label><br>
+				
+					<label><input type="text" name="place" required> Место проживания</label>
+				</p>
+
+			<p class="ptext">Что вы обычно делаете на выходных:</p>
+
+				<p>
+					<label><input type="checkbox" name="dream"> Сплю</label>
+				</p>
+
+				<p>
+					<label><input type="checkbox" name="walk with friends"> Гуляю с друзьями</label>
+				</p>
+
+				<p>
+					<label><input type="checkbox" name="cobaco"> Гуляю с собакой</label>
+				</p>
+
+				<p>
+					<label><input type="checkbox" name="games"> Играю в игры</label>
+				</p>
+
+				<p class="ptext">Рассказать о формах в книге, посвященной HTML:</p>
+
+				<select>
+					<option value="frequency">Site frequency:</option>
+					<option value="1">1</option>
+				</select>
+
+			<p class="ptext">Сколько книг вы прочитали за свою жизнь:</p>
+
+				<p><label><input type="radio" name="quality_books" value="0-10"> 0-10</label></p>
+
+				<p><label><input type="radio" name="quality_books" value="11-20"> 11-20</label></p>
+
+				<p><label><input type="radio" name="quality_books" value="21-50"> 21-25</label></p>
+
+				<p><label><input type="radio" name="quality_books" value="50+"> 50+</label></p>
+
+			<p class="ptext">Ваши комментарии:</p>
+
+			<p><textarea class="lirica"></textarea></p>
+
+			
+			<select class="position" size="3" name="position" multiple="">
+				<option value="1">Первая позиция</option>
+				<option selected="" value="2">Вторая позиция</option>
+				<option value="3">Третья позиция</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>И в заключении</legend>
+			<input class="noname" type="text" name="place" placeholder="Это поле было введено до вас">
+
+			<p class="word-email">Email:</p>
+			<input class="input-email" type="Email" name="email">
+
+			<p class="ptext">Хотите подписаться на самую модную рассылку спама?</p>
+			<p><em>Выберите категории</em></p>
+
+				<p><label><input type="checkbox" name="equipment"> Оборудование</label></p>
+				<p><label><input type="checkbox" name="breakfast"> Как приготовить обеды</label></p>
+				<p><label><input type="checkbox" name="lyam"> Заработай миллион за два дня!</label></p>
+
+			<p class="ptext">На сколько сложная задача:</p>
+
+				<p><label><input type="radio" name="howoften" value="no" checked=""> Совсем нет</label></p>
+				<p><label><input type="radio" name="howoften" value="so-so"> Так себе</label></p>
+				<p><label><input type="radio" name="howoften" value="yes"> Еле справились</label></p>
+		</fieldset>
+
+		<p><input class="submit" type="submit" name="button"></p>
+
+	</form>
+
+</body>
+</html>
